@@ -1,0 +1,91 @@
+/* body styling is here */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: blue;
+}
+
+/* calculator styling here */
+.CALCULATOR {
+  padding: 17px;
+  width: 240px;
+  background-color: black;
+  border-radius: 25px;
+  box-shadow: 0 5px 25px black;
+}
+
+/* buttons styling is here */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+}
+
+/* equalsto button styling is here */
+.equals-to {
+  background: red;
+  color: white;
+  border-radius: 25px;
+}
+
+.equals-to:hover {
+  background: rgba(250, 240, 230, 0.288);
+  color: white;
+}
+
+/* display styling is here */
+#dplay {
+  width: 100%;
+  height: 70px;
+  text-align: right;
+  margin-bottom: 15px;
+  font-size: 25px;
+  padding: 5px;
+  border: none;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.226);
+  border-radius: 15px;
+}
+
+.btn {
+  background: red;
+  color: white;
+  border-radius: 15px;
+  font-weight: 900;
+
+}
+
+.btn:hover {
+  background: rgba(250, 240, 230, 0.288);
+  color: white;
+}
+/* button styling is here */
+
+button {
+  height: 45px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.274);
+  color: white;
+}
+
+/* <----reponsive desin styling----> */
+
+@media (max-width: 400px) {
+  #display {
+    font-size: 24px;
+    padding: 16px;
+    width: 220px;
+    height: 40px;
+  }
+}

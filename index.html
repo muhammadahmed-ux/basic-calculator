@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator!</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="CALCULATOR">
+        <input type="text" id="dplay" readonly>
+        <div class="buttons">
+
+            <button onclick="clearDisplay()" class="btn">AC</button>
+            <button onclick="delchar()" class="btn">DEL</button>
+            <button onclick="appendValue('%')" class="btn">%</button>
+            <button onclick="appendValue('/')" class="btn"><i class="fa-solid fa-divide"></i></button>
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button onclick="appendValue('*')" class="btn"><i class="fa-solid fa-xmark"></i></button>
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button onclick="appendValue('-')" class="btn">-</button>
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+            <button onclick="appendValue('+')" class="btn">+</button>
+            <button onclick="appendValue('00')">00</button>
+            <button onclick="appendValue('0')">0</button>
+            <button onclick="appendValue('.')">.</button>
+            <button onclick="calculate()" class="equals-to">=</button>
+
+        </div>
+    </div>
+
+</body>
+<script src="./app.js"></script>
+
+</html>
